@@ -1,0 +1,7 @@
+build/
+sdkconfig
+sdkconfig.old
+.settings/
+.cproject
+.project
+eclipse_make.py

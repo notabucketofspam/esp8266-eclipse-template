@@ -6,3 +6,4 @@ sed -i s,"esp8266-eclipse-template",${PWD##*/},g "CMakeLists.txt"
 IDF_PATH_FIX=$(sed 's,\\,/,g' <<<"$IDF_PATH")
 IDF_PATH_FIX=$(sed 's,:,\\\\:,g' <<<"$IDF_PATH_FIX")
 sed -i s,"IDF_PATH_TEMP",$IDF_PATH_FIX,g ".settings/org.eclipse.cdt.core.prefs"
+mv .gitignore_proper .gitignore
